@@ -1,0 +1,9 @@
+pipelines:
+  default:
+    - step:
+        name: Run Node js
+        image: node:18
+        script:
+          - echo "Starting pipeline..."
+
+          - npm install && node index.js
